@@ -1,10 +1,10 @@
 {
-    "name": "silinternational/php-utils",
-    "description": "PHP library including various utility classes",
+    "name": "silinternational/php-dot-notation",
+    "description": "PHP library for using dot notation in arrays",
     "type": "library",
     "license": "MIT",
     "autoload": {
-        "psr-4": {"Sil\\PhpUtils\\": "src/"}
+        "psr-4": {"Sil\\PhpArrayDotNotation\\": "src/"}
     },
     "require": {
         "php": ">=7.0"

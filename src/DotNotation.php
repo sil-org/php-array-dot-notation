@@ -1,8 +1,8 @@
 <?php
 
-namespace Sil\PhpUtils\Arrays;
+namespace Sil\PhpArrayDotNotation;
 
-class ArrayCollapse
+class DotNotation
 {
     /**
      * Recursively collapse a multi-dimensional array into a single-dimensional array.
@@ -27,14 +27,14 @@ class ArrayCollapse
      * @param string $parentKey array key associated with $childArray in the parent array
      * @return array
      */
-    public static function arrayCollapseRecursive($childArray, $parentKey = '')
+    public static function collapse($childArray, $parentKey = '')
     {
         $newArray = [];
 
         foreach ($childArray as $key => $value) {
             $combinedKey = (empty($parentKey) ? '' : $parentKey . '.') . $key;
             if (is_array($value)) {
-                $newArray = array_merge($newArray, self::arrayCollapseRecursive($value, $combinedKey));
+                $newArray = array_merge($newArray, self::collapse($value, $combinedKey));
             } else {
                 $newArray[$combinedKey] = $value;
             }

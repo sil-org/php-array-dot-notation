@@ -1,8 +1,8 @@
 <?php
-namespace Sil\PhpUtils\tests;
+namespace Sil\PhpArrayDotNotation\tests;
 
 use PHPUnit\Framework\TestCase;
-use Sil\PhpUtils\Arrays\ArrayCollapse;
+use Sil\PhpArrayDotNotation\DotNotation;
 
 class ArrayCollapseTest extends TestCase
 {
@@ -25,7 +25,7 @@ class ArrayCollapseTest extends TestCase
         ];
 
         // Act
-        $actualOutput = ArrayCollapse::arrayCollapseRecursive($input);
+        $actualOutput = DotNotation::collapse($input);
 
         // Assert
         $this->assertEquals($expectedOutput, $actualOutput);
