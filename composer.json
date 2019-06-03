@@ -1,5 +1,5 @@
 {
-    "name": "silinternational/php-dot-notation",
+    "name": "silinternational/php-array-dot-notation",
     "description": "PHP library for using dot notation in arrays",
     "type": "library",
     "license": "MIT",
