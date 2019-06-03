@@ -7,7 +7,7 @@
         "psr-4": {"Sil\\PhpArrayDotNotation\\": "src/"}
     },
     "require": {
-        "php": ">=7.0"
+        "php": ">=5.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.1"
